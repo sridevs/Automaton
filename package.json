@@ -1,0 +1,15 @@
+{
+  "name": "AutomatorMachine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "nyc mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "5.1.1",
+    "nyc": "^13.1.0",
+    "supertest": "^3.0.0"
+  }
+}

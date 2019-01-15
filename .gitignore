@@ -1,0 +1,8 @@
+# Coverage directory used by istanbul
+coverage
+
+# nyc test coverage
+.nyc_output
+
+#node modules
+node_modules
