@@ -1,3 +1,5 @@
+const lib = require('./lib.js');
+
 class DFA {
   constructor(tuple) {
     this.states = tuple.states;
@@ -9,7 +11,8 @@ class DFA {
 
   accept(input) {
     let currentState = this.startState;
-    input.split("").forEach(num => currentState = this.delta[currentState][num]);
+    input.split("").forEach(alphabet => currentState = lib.getNextState(this.delta, currentState, alphabet));
+    console.log('iiiiiiiiiiiiiihello', input, currentState,this.finalState);
     return this.finalState.includes(currentState);
   }
 }
