@@ -12,7 +12,6 @@ class DFA {
   accept(input) {
     let currentState = this.startState;
     input.split("").forEach(alphabet => currentState = lib.getNextState(this.delta, currentState, alphabet));
-    console.log('iiiiiiiiiiiiiihello', input, currentState,this.finalState);
     return this.finalState.includes(currentState);
   }
 }

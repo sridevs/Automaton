@@ -6,7 +6,6 @@ describe('NfaToDfaConvertor', () => {
   describe('convertNfaToDfa', () => {
     it('nfaPassCasesShouldBeAcceptedByDfaPostConversion', () => {
       nfaToDfaCases.forEach((nfaTuple) => {
-        console.log("-------------",nfaTuple.name);
         let nfaToDfaConvertor = utilFns.createNfaToDfaConvertor(nfaTuple);
         let dfaTuple = {};
         dfaTuple['tuple'] = nfaToDfaConvertor.convert();
